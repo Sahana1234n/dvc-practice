@@ -12,6 +12,9 @@ df = pd.DataFrame(data)
 new_row_loc = {'Name':'Ann' , 'Age':24 , 'City':'Africa'}
 df = pd.concat([df, pd.DataFrame([new_row_loc])], ignore_index=True)
 
+new_row_loc2 = {'Name':'Annie' , 'Age':25 , 'City':'Africa'}
+df = pd.concat([df, pd.DataFrame([new_row_loc2])], ignore_index=True)
+
 
 #Ensure the "data" directory exists at the root level
 
