@@ -5,7 +5,13 @@ data = {'Name':['Alice' , 'Bob' , 'Charlie'],
         'Age': [25 , 27 , 29],
         'City': ['Africa' , 'Banglore','Chicago']}
 
+
 df = pd.DataFrame(data)
+
+#adding some more rows
+new_row_loc = {'Name':'Ann' , 'Age':24 , 'City':'Africa'}
+df = pd.concat([df, pd.DataFrame([new_row_loc])], ignore_index=True)
+
 
 #Ensure the "data" directory exists at the root level
 
